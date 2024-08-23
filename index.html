@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITAL TRAINING</title>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- js -->
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- tela login  -->
+    <div class="container bg-color-home" id="logar">
+
+        <!-- parte esquerda -->
+        <div class="left-box-main">
+            <h2 class="h2-main">Organize suas atividades em um só lugar,</h2>
+            <h2 class="h2-main">apenas com a Digital Training!</h2>
+            <img src="./images/software-tester-animate.svg" alt="" class="image-main">
+        </div>
+
+        <!-- parte direita -->
+        <div class="right-box-main">
+
+            <div class="box-login">
+
+                <form action="" class="form-login">
+                    <label for="login" class="label-login">Login:</label>
+                    <input type="text" class="input-login" id="login">
+
+                    <label for="senha" class="label-login">Senha:</label>
+                    <input type="password" class="input-login" id="senha">
+
+                    <input type="submit" class="btn-login" onclick="logar(); return false;">
+                </form>
+
+                <a href="#registro" class="link-to-register">Não é cadastrado? Clique aqui!</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- tela registro  -->
+    <div class="container bg-color-home-2" id="registro">
+
+        <div class="register-box">
+
+            <form action="" class="register-form">
+
+                <label for="" class="label-register">Nome: </label>
+                <input type="text" class="input-register" required>
+
+                <label for="" class="label-register">Sobrenome: </label>
+                <input type="text" class="input-register" required>
+
+                <label for="" class="label-register">Email: </label>
+                <input type="email" class="input-register" required>
+
+                <label for="" class="label-register">Telefone: </label>
+                <input type="text" inputmode="numeric" class="input-register" required>
+
+                <label for="" class="label-register">Crie uma senha: </label>
+                <input type="password" class="input-register" required>
+
+                <button class="btn-login">Cadastrar</button>
+            </form>
+
+            <a href="#logar" class="link-to-register">Já possui uma conta? Clique aqui!</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
